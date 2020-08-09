@@ -1,0 +1,64 @@
+#sec1{
+    overflow: hidden;
+    padding: 0 100px;
+}
+#sec1 .col{
+    float: left;
+}
+#sec1 .left{
+    width: 30%;
+    height: 100px;
+}
+#sec1 .right{
+    width: 70%;
+    overflow: hidden;
+}
+#sec1>.right>div{
+    float: left;
+    width: 33.3%;
+}
+#sec1>.col>div>.container{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+#sec1 .container>img{
+    width: 100%;
+}
+#sec1 .productBtn{
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    text-decoration: none;
+    background-color: #FFF;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 2;
+    color: #000;
+}
+#sec1 .cart{
+    top: 75%;
+}
+#sec1 .productBtn:hover>i{
+    color: #e00004;
+}
+#sec1 .addCart{
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: #FFF;
+    text-decoration: none;
+    position: absolute;
+    bottom: 1.2%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 100%;
+    height: 0%;
+    padding: 0px;
+    z-index: 2;
+}
+#sec1 .container:hover .addCart{
+    height: 4%;
+    padding: 10px 0;
+    transition: 500ms;
+}
